@@ -1,20 +1,7 @@
-package main
+// PACAKGE DOG ALLOWS US TO MORE FULLY UNDERSTAND DOGS.
+package dog
 
-import (
-	"fmt"
-
-	"github.com/reena/go-bookstore/01/dog"
-)
-
-type canine struct {
-	name string
-	age  int
-}
-
-func main() {
-	fido := canine{
-		name: "fido",
-		age:  dog.Years(10),
-	}
-	fmt.Println(fido)
+// Years converts human years to dog years.
+func Years(n int) int {
+	return n * 10
 }
